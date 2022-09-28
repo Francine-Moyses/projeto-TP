@@ -33,6 +33,7 @@ public class Principal extends javax.swing.JFrame {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 input_nomeActionPerformed(evt);
             }
+            
         });
         getContentPane().add(input_nome);
         input_nome.setBounds(30, 110, 260, 30);
