@@ -6,6 +6,7 @@
 <div align="left">
   
    <img align="center" alt="Fran-Python" height="90" width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg">
+   <img align="center" alt="Fran-Python" height="90" width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg">
           
 </div>
 
