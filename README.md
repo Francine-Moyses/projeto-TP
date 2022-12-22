@@ -1,6 +1,9 @@
 # Banco de dados | Java
 **Projeto:** Aplicativo em Java
 
+**Descrição das Pastas:**
+* img: Pasta com imagens
+
 ## Tecnologias Utilizadas
 
 <div align="left">
