@@ -1,4 +1,4 @@
-# Banco de dados | Java
+# Projeto da disciplina Técnicas de Programação | Java
 **Projeto:** Aplicativo em Java
 
 **Descrição das Pastas:**
