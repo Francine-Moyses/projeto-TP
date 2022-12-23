@@ -23,5 +23,11 @@ R 01 |Linguagem de programação Java |
 R 02 |Sistema de Login |
 R 03 |Conexão com banco de dados |
 
+## Telas
+
+<div> 
+   <img src="https://github.com/Francine-Moyses/projeto-TP/blob/main/img/Login.png?raw=true"></img>
+   <img src="https://github.com/Francine-Moyses/projeto-TP/blob/main/img/Cadastro.png?raw=true"></img> 
 </div>
 
+</div>
