@@ -5,6 +5,9 @@
 package projetobancodedados;
 
 import javax.swing.JOptionPane;
+import javax.swing.*;
+import javax.sql.*;
+
 
 /**
  *
@@ -12,6 +15,10 @@ import javax.swing.JOptionPane;
  */
 public class Principal extends javax.swing.JFrame {
 
+    public Connection conn = null;
+    public Statement stmt;
+    public ResultSet rs;
+    
     /**
      * Creates new form Principal
      */
@@ -257,7 +264,35 @@ public class Principal extends javax.swing.JFrame {
 
     private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {                                        
         // TODO add your handling code here:
-    }                                       
+    }   
+    
+    private void btnIserirActionPerformed(java.awt.event.ActionEvent evt) {                                        
+       // TODO add your handling code here:
+        
+        try {
+Class.forName(“com.mysql.jdbc.Driver”);
+conn = DriverManager.getConnection(“jdbc:mysql://localhost/dbaula4”,
+ “root”, “123”);
+stmt = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,
+ResultSet.CONCUR_UPDATABLE);
+ String sql = “INSERT INTO curso VALUES(‘”
+ + txtSigla.getText() + “’,’”
+ + txtNome.getText() + “’,’”
+ + txtDesc.getText() + “’)”;
+JOptionPane.showMessageDialog(null, sql);
+int i = 0;
+ i = stmt.executeUpdate(sql);//executando o comando sql
+stmt.close();
+if (i > 0) {
+JOptionPane.showMessageDialog(null, “Curso cadastrado com sucesso!”);
+abreTabela();
+ }
+ } catch (ClassNotFoundException e) {
+System.out.println(e);
+ } catch (SQLException e) {
+System.out.println(e);
+}
+    }   
 
     /**
      * @param args the command line arguments
